@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Success Science Academy</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Success Science Academy</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner" id="banner">
+    <h1>Welcome to Success Science Academy</h1>
+    <p>Empowering students with knowledge, discipline, and success.</p>
+    <button>Join Us Today</button>
+  </section>
+
+  <main>
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <div class="grid">
+        <div class="card"><h3>Science (11th & 12th)</h3><p>Physics, Chemistry, Maths, Biology with expert guidance.</p></div>
+        <div class="card"><h3>Competitive Exams</h3><p>NEET, JEE, CET preparation with test series and mentoring.</p></div>
+        <div class="card"><h3>Foundation (8th–10th)</h3><p>Strong basics for school students to excel in future studies.</p></div>
+      </div>
+    </section>
+
+    <section id="faculty">
+      <h2>Our Faculty</h2>
+      <div class="grid">
+        <div class="card"><h3>Dr. A. Sharma</h3><p>PhD in Physics, 15+ years of experience.</p></div>
+        <div class="card"><h3>Prof. Meera Patel</h3><p>Chemistry expert with proven success in NEET coaching.</p></div>
+        <div class="card"><h3>Mr. R. Deshmukh</h3><p>Mathematics mentor with unique problem-solving strategies.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Success Science Academy is dedicated to nurturing young minds with high-quality education, modern teaching methods, and personalized attention. Our mission is to help students achieve academic excellence and career success.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Success Science Academy. All Rights Reserved.</p>
+  </footer>
+
+  <script> 
+    function toggleMenu() { 
+      document.getElementById("menu").classList.toggle("active"); 
+    } 
+  </script>
+  
+
+</body>
+</html>
