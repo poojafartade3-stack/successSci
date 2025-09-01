@@ -1,93 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>Success Science Academy</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Science Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Success Science Academy</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="menu">
-        <li><a href="#banner">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#faculty">Faculty</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="header">
+      <div class="logo">Success Science Academy</div>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      <nav class="navbar">
+        <ul id="menu" class="menu">
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="banner" id="banner">
-    <h1>Welcome to Success Science Academy</h1>
-    <p>Empowering students with knowledge, discipline, and success.</p>
-    <button>Join Us Today</button>
-  </section>
+    <!-- Banner / Hero -->
+    <section id="banner" class="banner">
+      <h1>Welcome to Success Science Academy</h1>
+      <p>Empowering students with knowledge, discipline, and success.</p>
+      <a href="#contact" class="btn">Join Us Today</a>
+    </section>
 
-  <main>
-    <section id="courses" class="courses-section">
-      <h2>Our Courses</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="icon">📘</div>
-          <h3>11th & 12th Science</h3>
-          <p>Expert coaching in <strong>Physics, Chemistry, Mathematics, and Biology</strong> with integrated preparation for <strong>CET, NEET, and JEE</strong>.</p>
-       </div>
-    
-        <div class="card">
-          <div class="icon">📝</div>
-          <h3>Test Series & Assessments</h3>
-          <p>Regular <strong>Weekly Tests</strong> for continuous evaluation and a <strong>Monthly Mega Test</strong> to simulate real exam conditions and boost confidence.</p>
+    <!-- Main -->
+    <main>
+      <section id="courses" class="courses-section">
+        <h2>Our Courses</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">📘</div>
+            <h3>11th & 12th Science</h3>
+            <p>
+              Expert coaching in
+              <strong>Physics, Chemistry, Mathematics, and Biology</strong> with
+              integrated preparation for <strong>CET, NEET, and JEE</strong>.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📝</div>
+            <h3>Test Series & Assessments</h3>
+            <p>
+              Regular <strong>Weekly Tests</strong> and a
+              <strong>Monthly Mega Test</strong>
+              to simulate real exam conditions and boost confidence.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎯</div>
+            <h3>Personalized Mentoring</h3>
+            <p>
+              One-on-one doubt-solving sessions, study planning, and performance
+              tracking to keep every student on the path to success.
+            </p>
+          </article>
         </div>
-    
-        <div class="card">
-          <div class="icon">🎯</div>
-          <h3>Personalized Mentoring</h3>
-          <p>One-on-one doubt-solving sessions, study planning, and performance tracking to ensure every student stays on the path to success.</p>
+      </section>
+    </main>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="faculty-section">
+      <div class="faculty-container">
+        <h2>Our Faculty</h2>
+
+        <div class="faculty-scroll">
+          <!-- 1 -->
+          <article class="faculty-card">
+            <div class="avatar">
+              <img src="img/teacher_1.jpg" alt="Dr. Sachin Solat" />
+            </div>
+            <h3>Dr. Sachin Solat</h3>
+            <p class="subject">Biology</p>
+            <p class="meta">MBBS, MD — 16+ Years Experience</p>
+          </article>
+
+          <!-- 2 -->
+          <article class="faculty-card">
+            <div class="avatar">
+              <img src="img/teacher_1.jpg" alt="Eng Mahesh Bankar" />
+            </div>
+            <h3>Eng Mahesh Bankar</h3>
+            <p class="subject">Mathematics</p>
+            <p class="meta">University Gold Medalist — 13+ Years Experience</p>
+          </article>
+
+          <!-- 3 -->
+          <article class="faculty-card">
+            <div class="avatar">
+              <img src="img/teacher_1.jpg" alt="Eng Sugit Wagh" />
+            </div>
+            <h3>Eng Sugit Wagh</h3>
+            <p class="subject">Physics</p>
+            <p class="meta">GATE Qualified — 13+ Years Experience</p>
+          </article>
+
+          <!-- 4 -->
+          <article class="faculty-card">
+            <div class="avatar">
+              <img src="img/teacher_1.jpg" alt="Trupti Katariya" />
+            </div>
+            <h3>Trupti Katariya</h3>
+            <p class="subject">Chemistry</p>
+            <p class="meta">D Pharma — 12+ Years Experience</p>
+          </article>
+
+          <!-- 5 -->
+          <article class="faculty-card">
+            <div class="avatar">
+              <img src="img/teacher_1.jpg" alt="Renuka Bhopkar" />
+            </div>
+            <h3>Renuka Bhopkar</h3>
+            <p class="subject">Chemistry</p>
+            <p class="meta">MSc Chemistry</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="faculty">
-      <h2>Our Faculty</h2>
-      <div class="grid">
-        <div class="card"><h3>Dr. A. Sharma</h3><p>PhD in Physics, 15+ years of experience.</p></div>
-        <div class="card"><h3>Prof. Meera Patel</h3><p>Chemistry expert with proven success in NEET coaching.</p></div>
-        <div class="card"><h3>Mr. R. Deshmukh</h3><p>Mathematics mentor with unique problem-solving strategies.</p></div>
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- Left: Image -->
+        <div class="about-image">
+          <img
+            src="img/Screen Shot 2020-10-10 at 5.15.48 pm.png"
+            alt="Success Science Academy"
+          />
+          <div class="overlay">Build your future with us !!!!!</div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>
+            At <strong>Success Science Academy</strong>, we are dedicated to
+            nurturing the next generation of achievers with the highest quality
+            education in science and competitive exam preparation. Our team of
+            experienced faculty members bring decades of teaching excellence to
+            help students build strong conceptual foundations and excel in board
+            as well as entrance exams.
+          </p>
+
+          <h3>Our Programs</h3>
+          <ul>
+            <li><strong>11th & 12th Science (State & CBSE Boards)</strong></li>
+            <li>
+              <strong>NEET Preparation</strong> – For aspiring medical
+              professionals
+            </li>
+            <li>
+              <strong>JEE Preparation</strong> – For engineering aspirants
+            </li>
+            <li>
+              <strong>CET Preparation</strong> – Focused coaching for
+              state-level exams
+            </li>
+          </ul>
+
+          <p>
+            With personalized guidance, result-oriented teaching methods, and
+            modern facilities, Success Science Academy has become a trusted name
+            for students who aim high and dream big.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Success Science Academy is dedicated to nurturing young minds with high-quality education, modern teaching methods, and personalized attention. Our mission is to help students achieve academic excellence and career success.</p>
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p><i class="fas fa-phone"></i> +91 9876543210</p>
+          <p><i class="fas fa-envelope"></i> info@lmsoft.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Map -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.973970878229!2d72.87765541490098!3d19.076090987087233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c63005ad69d3%3A0x8c49b18f06a2f3a5!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1616747814655!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Success Science Academy. All Rights Reserved.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Success Science Academy. All Rights Reserved.</p>
-  </footer>
+    <!-- JavaScript -->
+    <script>
+      const menu = document.getElementById("menu");
+      const toggle = document.querySelector(".menu-toggle");
 
-  <script> 
-    function toggleMenu() { 
-      document.getElementById("menu").classList.toggle("active"); 
-    } 
-  </script>
-  
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
 
-</body>
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => menu.classList.remove("active"));
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          menu.classList.contains("active") &&
+          !menu.contains(event.target) &&
+          !toggle.contains(event.target)
+        ) {
+          menu.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
 </html>
