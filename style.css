@@ -37,9 +37,18 @@ body {
   z-index: 1000;
 }
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.25rem;
   font-weight: bold;
+  gap: 10px; /* space between logo and text */
 }
+
+.logo img {
+  height: 40px; /* adjust size of logo */
+  width: auto; /* keeps aspect ratio */
+}
+
 .menu {
   list-style: none;
   display: flex;
