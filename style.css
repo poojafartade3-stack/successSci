@@ -125,6 +125,20 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
+
+  max-width: 1200px; /* control width */
+  margin: 0 auto; /* center it */
+}
+
+@media (min-width: 900px) {
+  .courses-scroll {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    overflow: visible;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .courses-scroll::-webkit-scrollbar {
@@ -179,6 +193,7 @@ body {
 
 /* ===== Faculty Section ===== */
 .faculty-section {
+  background: linear-gradient(to right, #f9fafb, var(--gray-bg));
   width: 100%;
   background: #f9fafb;
   padding: 80px 0;
@@ -270,8 +285,8 @@ body {
 /* ===== About Us Section ===== */
 
 .about-section {
+  background: linear-gradient(to right, #f9fafb, var(--gray-bg));
   width: 100%;
-  background: #fff;
   padding: 80px 0;
 }
 
@@ -401,8 +416,8 @@ body {
 
 /* Contact Section */
 .contact {
+  background: linear-gradient(to right, #f9fafb, var(--gray-bg));
   padding: 70px 50px;
-  background: #fff;
 }
 
 .contact-container {
@@ -410,6 +425,8 @@ body {
   align-items: stretch;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 1200px; /* control width */
+  margin: 0 auto;
 }
 
 .contact-info {
@@ -504,7 +521,6 @@ body {
   }
 }
 
-/* ========= Footer ========= */
 /* ========= Footer ========= */
 .footer {
   background: var(--dark-blue);
