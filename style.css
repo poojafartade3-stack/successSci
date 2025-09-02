@@ -243,62 +243,95 @@ body {
 }
 
 /* ===== About Us Section ===== */
+
 .about-section {
   width: 100%;
   background: #fff;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .about-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  gap: 50px;
+  gap: 60px; /* bigger gap between left & right */
 }
 
 .about-image {
-  flex: 1;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
+
 .about-image img {
   width: 100%;
-  height: 600px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 280px; /* smaller image */
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.9);
+}
+
+.about-extra {
+  background: #f9f9f9;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-extra p {
+  margin-bottom: 12px;
+}
+.about-extra p:last-child {
+  margin-bottom: 0;
 }
 
 .about-content {
   flex: 1.2;
   text-align: left;
 }
+
 .about-content h2 {
   font-size: 2.2rem;
-  color: var(--dark-blue);
+  color: #222;
   margin-bottom: 20px;
   position: relative;
 }
 .about-content h2::after {
   content: "";
   display: block;
-  width: 100px;
-  height: 5px;
-  background: var(--green);
-  margin-top: 12px;
-  border-radius: 3px;
+  width: 90px;
+  height: 4px;
+  background: #2ecc71;
+  margin-top: 10px;
+  border-radius: 2px;
 }
+
 .about-content h3 {
-  font-size: 1.4rem;
-  color: var(--green);
-  margin: 20px 0 10px;
+  font-size: 1.3rem;
+  color: #2ecc71;
+  margin: 25px 0 15px;
 }
-.about-content p {
+
+.about-content p,
+.about-content ul li {
   font-size: 1.05rem;
-  color: #374151;
-  margin-bottom: 15px;
+  color: #444;
   line-height: 1.7;
 }
+
 .about-content ul {
   list-style: none;
   padding: 0;
@@ -306,73 +339,26 @@ body {
 }
 .about-content ul li {
   position: relative;
-  padding-left: 22px;
-  margin-bottom: 10px;
-  font-size: 1.05rem;
-  color: #111827;
+  padding-left: 25px;
+  margin-bottom: 12px;
 }
 .about-content ul li::before {
   content: "✔";
   position: absolute;
   left: 0;
-  color: var(--green);
+  color: #2ecc71;
   font-weight: bold;
-}
-
-.about-image {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* optional */
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.about-image img {
-  width: 100%;
-  height: 600px;
-  border-radius: 16px;
-  transition: all 0.4s ease-in-out;
-}
-
-.about-image:hover img {
-  filter: blur(4px) brightness(0.7);
-  transform: scale(1.05); /* optional zoom effect */
-}
-
-.about-image .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  pointer-events: none;
-}
-
-.about-image:hover .overlay {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05);
+  font-size: 1.1rem;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .about-container {
     flex-direction: column;
-    text-align: center;
+    gap: 40px;
   }
-  .about-content {
-    text-align: center;
-  }
-  .about-content ul li {
-    padding-left: 0;
-  }
-  .about-content ul li::before {
-    display: none;
+  .about-image img {
+    height: 220px;
   }
 }
 
@@ -452,7 +438,7 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   aspect-ratio: 16 / 9; /* Keep nice ratio */
-  min-height: auto;     /* Let aspect ratio control height */
+  min-height: auto; /* Let aspect ratio control height */
 }
 
 .contact-map iframe {
@@ -467,7 +453,7 @@ body {
   .contact-container {
     flex-direction: column;
   }
-  
+
   .contact-map {
     aspect-ratio: 4 / 3; /* taller map on mobile */
   }
