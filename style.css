@@ -95,7 +95,6 @@ body {
 }
 
 /* ========= Courses Section ========= */
-/* ========= Courses Section ========= */
 .courses-section {
   background: linear-gradient(to right, #f9fafb, var(--gray-bg));
   padding: 70px 20px;
@@ -145,7 +144,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   scroll-snap-align: start;
-  border: 2px solid #15803d;
+  border: 2px solid #1e293b;
 }
 
 .card:hover {
@@ -240,7 +239,7 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   text-align: center;
   scroll-snap-align: start;
-  border: 2px solid #15803d;
+  border: 2px solid #1e293b;
 }
 .faculty-card:hover {
   transform: translateY(-6px);
